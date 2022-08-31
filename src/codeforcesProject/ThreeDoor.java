@@ -22,22 +22,19 @@ public class ThreeDoor {
         count = Integer.parseInt(firstLine);
 
         for (int i = 0; i < count; i++) {
-            System.out.println();
-            System.out.println("i: "+i);
-            String st1 = in.nextLine();
-            int key= Integer.parseInt(st1);
 
-            System.out.println("i*: "+i);
+            int st1 = in.nextInt();
+            in.nextLine();
             String st2 = in.nextLine();
-            System.out.println("i#: "+i);
-            String []arrSt=st2.split(" ");
-
-            int dorKey1=Integer.parseInt(arrSt[0]);
-            int dorKey2=Integer.parseInt(arrSt[1]);
-            int dorKey3=Integer.parseInt(arrSt[2]);
+            String[] arrSt = st2.split(" ");
 
 
-            houses.add(new OneHouse(key,new int[]{ dorKey1, dorKey2, dorKey3}));
+            int dorKey1 = Integer.parseInt(arrSt[0]);
+            int dorKey2 = Integer.parseInt(arrSt[1]);
+            int dorKey3 = Integer.parseInt(arrSt[2]);
+
+
+            houses.add(new OneHouse(st1, new int[]{dorKey1, dorKey2, dorKey3}));
         }
     }
 
@@ -69,3 +66,4 @@ class OneHouse{
 
 }
 
+//https://codeforces.com/problemset/problem/1709/A
