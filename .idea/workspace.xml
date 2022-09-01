@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7526a0c9-68ea-4a30-af3e-dc5dced532a6" name="Changes" comment="threeDoor start" />
+    <list default="true" id="7526a0c9-68ea-4a30-af3e-dc5dced532a6" name="Changes" comment="not normal work">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeforces.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeforces.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,26 +39,31 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../untitled1" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.40845072" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\PC\IdeaProjects\codeforces\src\codeforcesProject" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ThreeDoor">
+  <component name="RunManager" selected="Application.Test">
     <configuration name="BeautifulMatrix" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="codeforcesProject.BeautifulMatrix" />
       <module name="codeforces" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="codeforcesProject.*" />
+          <option name="PATTERN" value=".*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -66,7 +76,7 @@
       <module name="codeforces" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="codeforcesProject.*" />
+          <option name="PATTERN" value=".*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -79,7 +89,7 @@
       <module name="codeforces" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="codeforcesProject.*" />
+          <option name="PATTERN" value=".*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -92,7 +102,7 @@
       <module name="codeforces" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="codeforcesProject.*" />
+          <option name="PATTERN" value=".*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -101,11 +111,13 @@
       </method>
     </configuration>
     <configuration name="ThreeDoor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="codeforcesProject.ThreeDoor" />
       <module name="codeforces" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="codeforcesProject.*" />
+          <option name="PATTERN" value=".*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -113,10 +125,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.BeautifulMatrix" />
+      <item itemvalue="Application.DragonsAndKirito" />
+      <item itemvalue="Application.GreatSuccession" />
+      <item itemvalue="Application.Test" />
+      <item itemvalue="Application.ThreeDoor" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ThreeDoor" />
         <item itemvalue="Application.Test" />
+        <item itemvalue="Application.ThreeDoor" />
         <item itemvalue="Application.GreatSuccession" />
         <item itemvalue="Application.DragonsAndKirito" />
         <item itemvalue="Application.BeautifulMatrix" />
@@ -156,7 +175,7 @@
       <workItem from="1661977392528" duration="19000" />
       <workItem from="1661977575001" duration="148000" />
       <workItem from="1662016214525" duration="46000" />
-      <workItem from="1662057295732" duration="338000" />
+      <workItem from="1662057295732" duration="2615000" />
     </task>
     <task id="LOCAL-00001" summary="4 tasks with solution">
       <created>1648234381024</created>
@@ -214,7 +233,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661977647579</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="threeDoor start">
+      <created>1662057840520</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1662057840520</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -236,8 +262,8 @@
     <MESSAGE value="4 tasks with solution" />
     <MESSAGE value="Word capitalization" />
     <MESSAGE value="++" />
-    <MESSAGE value="threeDoor start" />
     <MESSAGE value="Revert &quot;threeDoor start&quot;&#10;&#10;This reverts commit 73b228b0" />
-    <option name="LAST_COMMIT_MESSAGE" value="Revert &quot;threeDoor start&quot;&#10;&#10;This reverts commit 73b228b0" />
+    <MESSAGE value="threeDoor start" />
+    <option name="LAST_COMMIT_MESSAGE" value="threeDoor start" />
   </component>
 </project>
