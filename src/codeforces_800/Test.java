@@ -1,4 +1,4 @@
-package codeforcesProject;
+package codeforces_800;
 
 public class Test {
     public static void main(String[] args) {
