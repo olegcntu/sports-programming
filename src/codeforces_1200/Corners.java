@@ -1,6 +1,4 @@
-package codeforces_1200;
-
-import codeforces_800.AntonAndDanik;
+//package codeforces_1200;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -8,11 +6,13 @@ import java.util.Scanner;
 
 public class Corners {
     private int count;
-    private ArrayList<Element> elements=new ArrayList<>();
+    private final ArrayList<Element> elements = new ArrayList<>();
 
     public static void main(String[] args) {
         Corners сorners = new Corners();
         сorners.inputData();
+        сorners.logic();
+        сorners.result();
     }
 
     private void inputData() {
@@ -24,41 +24,105 @@ public class Corners {
             String[] stRowAndColumn = in.nextLine().split(" ");
             int row = Integer.parseInt(stRowAndColumn[0]);
             int column = Integer.parseInt(stRowAndColumn[1]);
-            int localArr[] = new int[row * column];
+            int[] localArr = new int[row * column];
 
             int counter = 0;
             for (int j = 0; j < row; j++) {
                 String line = in.nextLine();
                 String[] stNum = line.split("");
-
-                for (int y = 0; y < column; y++)
-                    localArr[counter] = Integer.parseInt(stNum[y]);
-                    System.out.println(localArr[counter]);
+                for (int a = 0; a < column; a++) {
+                    localArr[counter] = Integer.parseInt(stNum[a]);
                     counter++;
+                }
             }
-            System.out.println(Arrays.toString(localArr));
             elements.add(new Element(localArr));
         }
+    }
 
-        System.out.println(elements);
+    private void logic() {
+        for (int i = 0; i < count; i++) {
+            logicForOne(elements.get(i));
+        }
+    }
+
+    private void logicForOne(Element element) {
+        while (element.sum()!=0) {
+            boolean isGo=true;
+
+            for (int i = 0; i < element.arrNum.length - 2; i++) {
+                if (element.arrNum[i] + element.arrNum[i + 1] + element.arrNum[i + 2] == 1) {
+                    element.arrNum[i] = 0;
+                    element.arrNum[i + 1] = 0;
+                    element.arrNum[i + 2] = 0;
+                    element.result++;
+                    i=0;
+                }
+            }
+            for (int i = 0; i < element.arrNum.length - 2; i++) {
+
+                if (element.arrNum[i] + element.arrNum[i + 1] + element.arrNum[i + 2] == 2) {
+                    if( i+3<element.arrNum.length && element.arrNum[i+3]==0 && element.arrNum[i]==0){  element.result++;}
+                    element.arrNum[i] = 0;
+                    element.arrNum[i + 1] = 0;
+                    element.arrNum[i + 2] = 0;
+
+                    element.result++;
+                    isGo=false;
+                }
+                if(!isGo){
+                    break;
+                }
+            }
+            if(!isGo){
+                continue;
+            }
+            for (int i = 0; i < element.arrNum.length - 2; i++) {
+                if (element.arrNum[i] + element.arrNum[i + 1] + element.arrNum[i + 2] == 3) {
+                    element.arrNum[i] = 0;
+                    element.arrNum[i + 1] = 0;
+                    element.arrNum[i + 2] = 0;
+                    element.result++;
+                    isGo=false;
+                }
+                if(!isGo){
+                    break;
+                }
+            }
+        }
 
     }
+
+    private void result() {
+        for (int i=0;i<count;i++){
+            System.out.println(elements.get(i).result);
+        }
+    }
+
 }
+    class Element {
+        int[] arrNum;
+        int result=0;
 
-class Element {
-    int arrNum[];
+        public Element(int[] arrNum) {
+            this.arrNum = arrNum;
+        }
 
-    public Element(int[] arrNum) {
-        this.arrNum = arrNum;
+        public int sum(){
+            int sumElement=0;
+            for (int j : arrNum) {
+                sumElement = sumElement + j;
+            }
+            return sumElement;
+        }
+
+        @Override
+        public String toString() {
+            return "Element{" +
+                    "arrNum=" + Arrays.toString(arrNum) +
+                    '}';
+        }
     }
 
-    @Override
-    public String toString() {
-        return "Element{" +
-                "arrNum=" + Arrays.toString(arrNum) +
-                '}';
-    }
-}
 
 
 //https://codeforces.com/problemset/problem/1720/C
